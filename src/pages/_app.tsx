@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import GlobalStyles from 'styles/global';
 
-function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -16,5 +16,3 @@ function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
-
-export default App;
