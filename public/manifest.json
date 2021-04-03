@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#06092b",
-  "description": "Sample description",
+  "description": "A simple app for marking places that I've already been.",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#06092b"
