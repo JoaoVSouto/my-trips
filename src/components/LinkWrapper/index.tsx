@@ -10,7 +10,9 @@ interface LinkWrapperProps {
 export default function LinkWrapper({ children, href }: LinkWrapperProps) {
   return (
     <S.Wrapper>
-      <Link href={href}>{children}</Link>
+      <Link href={href}>
+        <a>{children}</a>
+      </Link>
     </S.Wrapper>
   );
 }

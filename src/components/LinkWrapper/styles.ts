@@ -5,16 +5,16 @@ export const Wrapper = styled.div`
   z-index: 1100;
   top: var(--medium);
   right: var(--medium);
-  color: var(--white);
   cursor: pointer;
 
-  svg {
+  a {
+    color: var(--white);
     transition: color 300ms ease-in-out;
-  }
+    display: block;
+    font-size: 0;
 
-  &:hover,
-  &:focus-within {
-    svg {
+    &:hover,
+    &:focus {
       color: var(--highlight);
     }
   }
