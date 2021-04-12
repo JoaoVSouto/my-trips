@@ -10,7 +10,7 @@ interface Place {
   };
 }
 
-interface MapProps {
+export interface MapProps {
   places?: Place[];
 }
 
