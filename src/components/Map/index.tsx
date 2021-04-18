@@ -32,6 +32,9 @@ const CustomTileLayer = () =>
 const LeafIcon = new Icon({
   iconUrl:
     'https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|E3B505&chf=a,s,ee00FFFF',
+
+  iconSize: [21, 34],
+  iconAnchor: [10, 34],
 });
 
 export default function Map({ places }: MapProps) {
