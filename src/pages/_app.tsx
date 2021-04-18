@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import NextNProgress from 'nextjs-progressbar';
 
 import GlobalStyles from 'styles/global';
 
@@ -26,6 +27,13 @@ export default function App({ Component, pageProps }: AppProps) {
           content="A simple app for marking places that I've already been."
         />
       </Head>
+
+      <NextNProgress
+        color="#e20e8d"
+        startPosition={0.3}
+        stopDelayMs={200}
+        height={3}
+      />
 
       <Component {...pageProps} />
 
