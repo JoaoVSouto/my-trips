@@ -2907,7 +2907,7 @@ export type GetPlaceBySlugQuery = (
       & Pick<Location, 'latitude' | 'longitude'>
     ), description?: Maybe<(
       { __typename?: 'RichText' }
-      & Pick<RichText, 'html'>
+      & Pick<RichText, 'html' | 'text'>
     )>, gallery: Array<(
       { __typename?: 'Asset' }
       & Pick<Asset, 'url' | 'height' | 'width'>
