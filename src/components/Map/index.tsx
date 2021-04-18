@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import { Icon } from 'leaflet';
 
 interface Place {
   id: string;
@@ -28,6 +29,11 @@ const CustomTileLayer = () =>
     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
   );
 
+const LeafIcon = new Icon({
+  iconUrl:
+    'https://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|E3B505&chf=a,s,ee00FFFF',
+});
+
 export default function Map({ places }: MapProps) {
   const router = useRouter();
 
@@ -41,6 +47,7 @@ export default function Map({ places }: MapProps) {
 
       {places?.map(({ location: { latitude, longitude }, ...place }) => (
         <Marker
+          icon={LeafIcon}
           key={`place-${place.id}`}
           position={[latitude, longitude]}
           title={place.name}
