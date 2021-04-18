@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   cursor: pointer;
   background-color: var(--background);
   border-radius: 50%;
+  padding: 0.2rem;
 
   a {
     color: var(--white);
