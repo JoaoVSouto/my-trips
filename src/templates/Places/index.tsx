@@ -1,3 +1,7 @@
+import { CloseOutline } from '@styled-icons/evaicons-outline';
+
+import LinkWrapper from 'components/LinkWrapper';
+
 interface ImageProps {
   url: string;
   height: number;
@@ -18,6 +22,10 @@ export interface PlacesTemplateProps {
 export default function PlacesTemplate({ place }: PlacesTemplateProps) {
   return (
     <>
+      <LinkWrapper href="/">
+        <CloseOutline size={32} aria-label="Go back to map" />
+      </LinkWrapper>
+
       <h1>{place.name}</h1>
 
       <div dangerouslySetInnerHTML={{ __html: place.description.html }} />
