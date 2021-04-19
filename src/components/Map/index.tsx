@@ -46,6 +46,7 @@ export default function Map({ places }: MapProps) {
     <S.MapWrapper>
       <MapContainer
         center={[0, 0]}
+        minZoom={3}
         zoom={3}
         style={{ height: '100%', width: '100%' }}
       >
