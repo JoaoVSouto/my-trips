@@ -48,6 +48,10 @@ export default function Map({ places }: MapProps) {
         center={[0, 0]}
         minZoom={3}
         zoom={3}
+        maxBounds={[
+          [-180, 180],
+          [180, -180],
+        ]}
         style={{ height: '100%', width: '100%' }}
       >
         <CustomTileLayer />
